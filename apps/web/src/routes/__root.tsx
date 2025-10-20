@@ -8,7 +8,7 @@ import TanStackQueryDevtools from '../integrations/tanstack-query/devtools'
 
 import type { QueryClient } from '@tanstack/react-query'
 
-export interface MyRouterContext {
+interface MyRouterContext {
   queryClient: QueryClient
 }
 

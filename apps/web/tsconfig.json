@@ -1,5 +1,4 @@
 {
-  "extends": "@repo/typescript-config/react-library.json",
   "include": [
     "**/*.ts",
     "**/*.tsx",
@@ -9,7 +8,10 @@
   ],
 
   "compilerOptions": {
+    "target": "ES2022",
+    "jsx": "react-jsx",
     "module": "ESNext",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "types": ["vite/client"],
 
     /* Bundler mode */
@@ -18,13 +20,13 @@
     "verbatimModuleSyntax": true,
     "noEmit": true,
 
-    /* Linting extras */
+    /* Linting */
+    "skipLibCheck": true,
+    "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-
-    /* Path mapping */
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]

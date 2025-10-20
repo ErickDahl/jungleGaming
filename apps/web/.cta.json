@@ -1,5 +1,5 @@
 {
-  "projectName": "vite-project",
+  "projectName": "web",
   "mode": "file-router",
   "typescript": true,
   "tailwind": true,
@@ -8,9 +8,5 @@
   "git": true,
   "version": 1,
   "framework": "react-cra",
-  "chosenAddOns": [
-    "eslint",
-    "shadcn",
-    "tanstack-query"
-  ]
+  "chosenAddOns": ["eslint", "shadcn", "tanstack-query"]
 }
